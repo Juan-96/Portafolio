@@ -1,0 +1,149 @@
+/*para importan fuentes utilizamos google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color_primario:#000000;
+    --color_secundario:#F6F6F6;
+    --color_terciario:#22D4FD;
+    --color_hover:#272727;
+    --funete_Montserrat: "Montserrat", sans-serif;
+    --funte_krona: "Krona One", sans-serif;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: var(--color_primario);
+    color: var(--color_secundario); /*color del texto */
+    box-sizing: border-box; /* acomoda el elemento hijo para que no se salga */
+}
+
+.header{
+    padding: 2% 0% 0% 15%
+}
+
+.header_menu{
+    display: flex;
+    gap: 80px; /*espacio entre textos */
+}
+
+.header_menu_link{
+    font-family: var(--funete_Montserrat);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color_terciario);
+    text-decoration: none; 
+}
+
+strong {
+    color: var(--color_terciario); /*color del texto */
+}
+
+.Tituli-Destaque{
+    color: var(--color_terciario); /*color del texto */
+}
+
+.Presentacion{
+    padding: 6% 15%;
+    display: flex; /*define un contenido flexible para poder acomodar */
+    align-items: center; /* como se distribuyen los flex a lo largo del eje transversal */
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.Presentacion_contenido{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 40px;
+
+}
+
+.Presentacion_contenido_titulo{
+    font-size: 1.5rem; /*tamañp de la fuente */
+    font-family: var(--funte_krona); /*es el tipo de fuente */
+}
+
+.presentacion_contenido_texto{
+    font-size: 1.5rem; /*tamañp de la fuente */
+    font-family: var(--funete_Montserrat); /*es el tipo de fuente */
+}
+
+.presentacion_enlaces_redes{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.presentacion_enlaces_link{
+    width: 50%; /*eancho de los botones */
+    text-align: center; /*alinear los botones al centro */
+    padding: 22px 0px;
+    border-radius: 8px; /*borde de los botones */
+    font-family: var(--funete_Montserrat); /*tipo de letra */
+    font-size: 1.5rem; /*Tamaño de fuente */
+    font-weight: 600; /*ancho de la fuente */
+    text-decoration: none; /*remover el subrayado de la fuente */
+    color: var(--color_secundario); /*color de la fuente */
+    border: 2px solid var(--color_terciario); /*tamaño del borde de los botones */
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.presentacion_enlaces_link:hover { /*Se coloca la etiqueta de esta forma para que el boton haga cambio de color al posicionr el cursos sobre el boton */
+    background-color: var(--color_hover);
+}
+
+.presentacion_enlaces_subtitulo{
+    font-family: var(--funte_krona);
+    font-size: 1.5rem;
+    font-weight: 400px;
+}
+
+.foto_juan{
+    width: 50%;
+    border-radius: 2rem;
+}
+
+.footer{
+    background-color: var(--color_terciario);;
+    padding: 24px;
+    color: var(--color_primario);
+    text-align: center;
+    font-family: var(--funete_Montserrat);
+    font-size: 1.5rem;
+    font-weight: 400;
+
+}
+
+@media(max-width: 1300px ){
+
+    .header{
+        padding: 10%;
+    }
+
+    .header_menu{
+        justify-content: center;
+    }
+
+    .Presentacion{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .Presentacion_contenido{
+        width: auto;
+    }
+
+    
+
+}
